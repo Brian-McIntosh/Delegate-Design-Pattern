@@ -15,6 +15,8 @@ protocol ProductSelectionDelegate {
     func didSelectProduct(name: String, imageName: String)
 }
 ```
+(This is like a .h in Objective-C. It's just a declaration, not the implementation.)
+
 ### The BOSS (which is unintuitive at first b/c this VC is being presented by the main VC)
 ```swift
 class ProductSelectionVC: UIViewController {
