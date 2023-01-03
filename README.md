@@ -1,5 +1,5 @@
-# Delegates-Protocols-Sean-Allen
-A simple demonstration of the Protocol Delegate Pattern
+# Delegate Design Pattern
+Cocoa APIs often provide protocols that include delegate methods. Sean Allen breaks it down like the following.
 
 * Big picture context: BOSS and INTERN
 * Great for 1-to-1 communication
@@ -15,15 +15,15 @@ protocol ProductSelectionDelegate {
     func didSelectProduct(name: String, imageName: String)
 }
 ```
-(This is like a .h in Objective-C. It's just a declaration, not the implementation.)
+*This is like a .h in Objective-C. It's just a declaration, not the implementation.*
 
-### The BOSS (which is unintuitive at first b/c this VC is being presented by the main VC)
+### The BOSS (which is unintuitive at first b/c this ModalVC is presented by the main VC)
 ```swift
 class ProductSelectionVC: UIViewController {
 
-    let iPhoneButton = UIButton()
-    let iPadButton = UIButton()
-    let macBookButton = UIButton()
+    // let iPhoneButton = UIButton()
+    // let iPadButton = UIButton()
+    // let macBookButton = UIButton()
 
     // Now that we have our job description,
     // we need to have a product selection INTERN on our screen
