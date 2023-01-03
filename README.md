@@ -1,6 +1,8 @@
 # Delegate Design Pattern
 Cocoa APIs often provide protocols that include delegate methods. Sean Allen breaks it down like the following.
 
+<img src="https://github.com/Brian-McIntosh/Delegate-Design-Pattern/blob/main/Screen%20Shot%202022-12-28%20at%205.54.56%20PM.png" width="500"/>
+
 * Big picture context: BOSS and INTERN
 * Great for 1-to-1 communication
 * A delegate sits back and waits to be told when and what to do
